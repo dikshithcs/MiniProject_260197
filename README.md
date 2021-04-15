@@ -23,17 +23,17 @@ Following features are added in our employement system
 => Clicking on option 2 will display Employee List in the firm. It calls the EmpList Class.\
 => By Clicking on option 3 you can Modify/Delete Records of the employees.\
 => By clicking on option 4 you can view the employee details like Employee name, age and add salary.\
-=> On clicking on option 4, it will Exit from the Application.\
+=> On clicking on option 4, it will Exit from the Application.
 
 
 # SWOT ANALYSIS
-**4W's and 1'H**
-Who: Company\
+**4W's and 1'H** \
+Who: Company
 
-What: Employee details of the firm.\
+What: Employee details of the firm.
 
-When: There was problem of storing data manually but advancement in technologies helped in storing data and accessing it easily.\
+When: There was problem of storing data manually but advancement in technologies helped in storing data and accessing it easily.
 
-Where: This project can be used in all the company.\
+Where: This project can be used in all the company.
 
-How: The inconvinience is caused in storing data manually and accessing it. Digitally storing data will be helpful in accessing data easily and modifying it.\
+How: The inconvinience is caused in storing data manually and accessing it. Digitally storing data will be helpful in accessing data easily and modifying it.
