@@ -28,7 +28,7 @@ Following features are added in our employement system
 
 # SWOT ANALYSIS
 ## 4W's and 1'H
-**Who:** Company
+**Who:** Company/Organization
 
 **What:** Employee details of the firm.
 
