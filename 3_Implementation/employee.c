@@ -45,25 +45,23 @@ int main()
     /// infinite loop continues untile the break statement encounter
     while(1)
     {
-        system("cls"); ///clear the console window
-       // gotoxy(30,10); /// move the cursor to postion 30, 10 from top-left corner
-        printf("1. Add Record \n"); /// option for add record
-        //gotoxy(30,12);
+       
+        printf("\n1. Add Record \n"); /// option for add record
+
         printf("2. Display Records \n"); /// option for showing existing record
-        //gotoxy(30,14);
+
         printf("3. Modify Records \n"); /// option for editing record
-        //gotoxy(30,16);
+
         printf("4. Delete Records \n"); /// option for deleting record
-        //gotoxy(30,18);
+
         printf("5. Exit \n"); /// exit from the program
-        //gotoxy(30,20);
-        printf("Enter Your Choice : "); /// enter the choice 1, 2, 3, 4, 5
+
+        printf("\nEnter Your Choice : "); /// enter the choice 1, 2, 3, 4, 5
         fflush(stdin); /// flush the input buffer
-        choice  = getche(); /// get the input from keyboard
+        choice  = getchar(); /// get the input from keyboard
         switch(choice)
         {
         case '1':  /// if user press 1
-            system("cls");
             fseek(fp,0,SEEK_END); /// search the file and move cursor to end of the file
             /// here 0 indicates moving 0 distance from the end of the file
 
@@ -79,25 +77,29 @@ int main()
 
                 fwrite(&e,recsize,1,fp); /// write the record in the file
 
-                printf("\nAdd another record(y/n) ");
+                // printf("\nAdd another record(y/n) ");
                 fflush(stdin);
-                another = getche();
+                another = getchar();
             }
             break;
 
         case '2':
-            system("cls");
+      
             rewind(fp); ///this moves file cursor to start of the file
             while(fread(&e,recsize,1,fp)==1)  /// read the file and fetch the record one record per fetch
             {
-                printf("\n%s %d %.2f",e.name,e.age,e.bs); /// print the name, age and basic salary
+                printf("\n%s %d %.2f\n",e.name,e.age,e.bs); /// print the name, age and basic salary
             }
-            getch();
+            //getch();
+        //    delay(10);
+            //char abc;
+            //scanf("%c",&abc);
+            getchar();
             break;
 
 
         case '3':  /// if user press 3 then do editing existing record
-            system("cls");
+   
             another = 'y';
             while(another == 'y')
             {
@@ -115,15 +117,15 @@ int main()
                         break;
                     }
                 }
-                printf("\nModify another record(y/n)");
+                // printf("\nModify another record(y/n)");
                 fflush(stdin);
-                another = getche();
+                another = getchar();
             }
             break;
 
 
         case '4':
-            system("cls");
+       
             another = 'y';
             while(another == 'y')
             {
@@ -143,9 +145,9 @@ int main()
                 remove("EMP.DAT"); /// remove the orginal file
                 rename("Temp.dat","EMP.DAT"); /// rename the temp file to original file name
                 fp = fopen("EMP.DAT", "rb+");
-                printf("Delete another record(y/n)");
+                // printf("Delete another record(y/n)");
                 fflush(stdin);
-                another = getche();
+                another = getchar();
             }
             break;
 
